@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Job
+metadata:
+  labels: 
+    app: myapp
+    type: API
+  spec: 
+    containers: 
+      - name: 2b5d133f323e
+      image: image:1.0
+      command: ["python", "skripta.py"]
+      restartPolicy: OnFailure
